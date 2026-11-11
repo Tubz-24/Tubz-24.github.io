@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Play the Combat Demo — Toby Sait</title>
+<meta name="description" content="Play Toby Sait's physics-based combat demo in your browser. Swing force is calculated from real classical-mechanics formulas.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav"><div class="wrap">
+  <a class="brand" href="index.html">toby<span>.</span>sait</a>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a class="on" href="demo.html">Play demo</a>
+  </nav>
+</div></header>
+
+<main>
+<section class="first">
+  <div class="wrap">
+    <div class="eyebrow">Playable build · Unity WebGL</div>
+    <h1>Physics-Based Combat Demo</h1>
+    <p class="lead">Swing force is calculated from classical-mechanics formulas, so how you move the weapon decides how hard it hits. Try a slow swing, then a fast one.</p>
+
+    <div class="notice desktop-only">Best on desktop with a mouse and keyboard. First load can take a few seconds while the engine starts up.</div>
+
+    <!-- DESKTOP: playable embed -->
+    <div class="desktop-only">
+      <div class="frame" id="playFrame">
+        <div class="ph" id="playPlaceholder" style="flex-direction:column;gap:16px">
+          <span id="playMsg">Playable build coming soon — watch the capture below in the meantime.</span>
+          <button class="btn primary" id="playBtn" style="display:none;cursor:pointer" type="button">▶ Click to play</button>
+        </div>
+      </div>
+      <div class="btns" id="fsRow" style="display:none"><button class="btn" id="fsBtn" type="button" style="cursor:pointer">⛶ Fullscreen</button></div>
+    </div>
+
+    <!-- MOBILE: video fallback -->
+    <div class="mobile-only">
+      <div class="notice">The playable build needs a desktop browser. Here's a capture instead.</div>
+      <div class="frame" data-video>
+        <video muted loop playsinline autoplay preload="metadata" src="Videos/Physics-Based%20Combat%20Demo.mp4"></video>
+        <div class="ph">Video: Videos/Physics-Based Combat Demo.mp4</div>
+      </div>
+    </div>
+
+    <h3 style="margin-top:36px">Controls</h3>
+    <!-- TOBY: update these to match the real control scheme -->
+    <div class="controls">
+      <div class="key"><kbd>W A S D</kbd><span>Move</span></div>
+      <div class="key"><kbd>Mouse</kbd><span>Swing the sword — speed and direction matter</span></div>
+      <div class="key"><kbd>Esc</kbd><span>Release cursor</span></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="eyebrow">What you're looking at</div>
+    <h2>Impact you can feel, not just see.</h2>
+    <p class="lead">Instead of playing a canned hit animation, the demo reads the motion of your swing and calculates the force with real mechanics. Faster, heavier swings land harder. Two enemies, one sword, and a physics system doing the work.</p>
+    <div class="btns">
+      <a class="btn" href="portfolio.html#combat">Project write-up</a>
+      <a class="btn" href="https://github.com/Tubz-24" target="_blank" rel="noopener">Source on GitHub ↗</a>
+      <a class="btn primary" href="mailto:tobysait@outlook.com">Get in touch</a>
+    </div>
+  </div>
+</section>
+
+<section id="indiechip">
+  <div class="wrap">
+    <div class="eyebrow">More to play</div>
+    <h2>From Indiechip Games.</h2>
+    <p class="lead">Titles from Indiechip Games, part of Sait.Edu, where I work on shipping games.</p>
+    <div class="grid" style="margin-top:28px">
+
+      <div class="card game" data-game="hiss">
+        <div class="tag">Indiechip Games</div>
+        <h3>Hiss Off Home</h3>
+        <div class="frame" data-video style="margin-top:14px">
+          <video muted loop playsinline autoplay preload="metadata" src="Videos/hiss-off-home.mp4"></video>
+          <div class="ph poster" style="padding:0"><img src="games/hiss-off-home.jpg" alt="Hiss Off Home title screen: the gold snake fleeing the blue snake towards its burrow" style="width:100%;height:100%;object-fit:cover;display:block"><span class="play-badge" aria-hidden="true">▶</span></div>
+        </div>
+        <p style="margin-top:12px;color:var(--muted)">Steer the wandering gold snake into its burrow by blocking its path. Keyboard on desktop, swipe or tap on phones.</p>
+        <!-- TOBY: tweak the line above and add what you built on it -->
+        <div class="btns game-btns"></div>
+      </div>
+
+      <div class="card game" data-game="bunny">
+        <div class="tag">Indiechip Games</div>
+        <h3>Bunny Slides</h3>
+        <div class="frame" data-video style="margin-top:14px">
+          <video muted loop playsinline autoplay preload="metadata" src="Videos/bunny-slides.mp4"></video>
+          <div class="ph poster" style="padding:0"><img src="games/bunny-slides.jpg" alt="Bunny Slides gameplay: a bunny crossing bridges between slides, with foxes and a burrow below" style="width:100%;height:100%;object-fit:cover;display:block"><span class="play-badge" aria-hidden="true">▶</span></div>
+        </div>
+        <p style="margin-top:12px;color:var(--muted)">Draw bridges between the slides to guide the bunnies into their burrow and away from the foxes. Mouse on desktop, swipe on phones.</p>
+        <!-- TOBY: tweak the line above and add what you built on it -->
+        <div class="btns game-btns"></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+</main>
+
+<footer><div class="wrap">
+  <span>© 2026 Toby Sait</span>
+  <span><a href="index.html">Home</a> · <a href="portfolio.html">Portfolio</a> · <a href="cv/Toby_Sait_CV.pdf">CV</a></span>
+</div></footer>
+
+<script>
+/* ------------------------------------------------------------------
+   SET THIS once the WebGL build is hosted.
+   GitHub Pages:  "demos/combat-demo/index.html"
+   itch.io embed: the iframe URL itch.io gives you
+   Leave empty ("") to show the "coming soon" state.
+------------------------------------------------------------------- */
+var DEMO_URL = "";
+
+(function(){
+  var frame=document.getElementById('playFrame');
+  var msg=document.getElementById('playMsg');
+  var btn=document.getElementById('playBtn');
+  var ph=document.getElementById('playPlaceholder');
+  var fsRow=document.getElementById('fsRow');
+  var fsBtn=document.getElementById('fsBtn');
+  if(DEMO_URL){
+    msg.textContent='Physics-Based Combat Demo — ready.';
+    btn.style.display='inline-block';
+    btn.addEventListener('click',function(){
+      var i=document.createElement('iframe');
+      i.src=DEMO_URL; i.title='Physics-Based Combat Demo';
+      i.setAttribute('allowfullscreen','');
+      i.setAttribute('allow','fullscreen; autoplay');
+      frame.appendChild(i); ph.style.display='none'; fsRow.style.display='flex';
+    });
+    fsBtn.addEventListener('click',function(){
+      var el=frame.querySelector('iframe'); if(el&&el.requestFullscreen) el.requestFullscreen();
+    });
+  }
+  /* Indiechip games. Fill in whichever applies; leave "" for none.
+     embed: a WebGL page that can be shown in an iframe (desktop only)
+     link:  a store / itch.io / trailer page that opens in a new tab
+     linkLabel: optional text for the link button
+     ratio: optional frame shape while playing, e.g. "4/5" for a portrait game */
+  var GAMES = {
+    hiss:  { embed: "games/hiss-off-home.html", link: "games/hiss-off-home.html", linkLabel: "Play full screen ↗", ratio: "4/5" },
+    bunny: { embed: "games/bunny-slides/index.html", link: "games/bunny-slides/index.html", linkLabel: "Play full screen ↗", ratio: "1/1" }
+  };
+  document.querySelectorAll('.game').forEach(function(card){
+    var g=GAMES[card.getAttribute('data-game')]||{};
+    var row=card.querySelector('.game-btns');
+    var fr=card.querySelector('.frame');
+    if(g.embed){
+      var b=document.createElement('button');
+      b.type='button'; b.className='btn primary desktop-only'; b.style.cursor='pointer'; b.textContent='▶ Play here';
+      b.addEventListener('click',function(){
+        var i=document.createElement('iframe');
+        i.src=g.embed; i.title=card.querySelector('h3').textContent;
+        i.setAttribute('allowfullscreen',''); i.setAttribute('allow','fullscreen; autoplay');
+        fr.innerHTML=''; fr.classList.remove('has-video'); fr.removeAttribute('data-video');
+        if(g.ratio){ fr.style.aspectRatio=g.ratio; fr.style.maxWidth='520px'; fr.style.marginLeft='auto'; fr.style.marginRight='auto'; }
+        i.addEventListener('load',function(){ try{ i.focus(); }catch(e){} });
+        fr.appendChild(i);
+        b.remove();
+      });
+      row.appendChild(b);
+      var pimg=card.querySelector('.ph.poster');
+      if(pimg){ pimg.style.cursor='pointer'; pimg.addEventListener('click',function(){ if(window.matchMedia('(max-width: 780px)').matches && g.link){ window.open(g.link,'_blank'); } else { b.click(); } }); }
+    }
+    if(g.link){
+      var a=document.createElement('a');
+      a.className='btn'; a.href=g.link; a.target='_blank'; a.rel='noopener'; a.textContent=g.linkLabel||'Open game page ↗';
+      row.appendChild(a);
+    }
+    if(!g.embed && !g.link) row.style.display='none';
+  });
+
+  document.querySelectorAll('[data-video]').forEach(function(f){
+    var v=f.querySelector('video');
+    if(!v) return;
+    v.addEventListener('loadeddata',function(){f.classList.add('has-video')});
+    v.addEventListener('error',function(){f.classList.remove('has-video')});
+    if(v.readyState>=2) f.classList.add('has-video');
+  });
+})();
+</script>
+</body>
+</html>

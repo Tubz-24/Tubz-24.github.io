@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Portfolio — Toby Sait</title>
+<meta name="description" content="Gameplay systems, physics-driven combat and simulation tooling by Toby Sait, real-time 3D developer.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav"><div class="wrap">
+  <a class="brand" href="index.html">toby<span>.</span>sait</a>
+  <nav>
+    <a href="index.html">Home</a>
+    <a class="on" href="portfolio.html">Portfolio</a>
+    <a href="demo.html">Play demo</a>
+  </nav>
+</div></header>
+
+<main>
+<section class="first" style="padding-bottom:20px">
+  <div class="wrap">
+    <div class="eyebrow">Portfolio</div>
+    <h1>Studio work and personal projects.</h1>
+    <p class="lead">Each clip is a short capture straight from the build — muted and autoplaying. The combat demo is also playable in your browser.</p>
+  </div>
+</section>
+
+<div class="wrap">
+
+  <div class="studio" id="indiechip">
+    <div class="eyebrow">Currently working at</div>
+    <h2>Indiechip Games</h2>
+    <p>Indiechip Games is part of <a href="https://saitedu.net" target="_blank" rel="noopener">Sait.Edu</a>, where I work on shipping games alongside my own projects. Two of the titles are below.</p>
+    <!-- TOBY: add your role/title and start date here, e.g. "Junior Gameplay Programmer, since [month year]" -->
+    <div class="btns"><a class="btn" href="#hiss-off-home">Hiss Off Home</a><a class="btn" href="#bunny-slides">Bunny Slides</a></div>
+  </div>
+
+  <article class="project" id="hiss-off-home">
+    <div>
+      <div class="meta">Indiechip Games</div>
+      <h2>Hiss Off Home</h2>
+      <p>One of the titles I work on at Indiechip Games.</p>
+      <!-- TOBY: add 1-2 sentences on the game and what you built (systems, tools, features), plus store/trailer link -->
+      <div class="chips"><span class="chip">Indiechip Games</span><span class="chip">Playable in browser</span></div>
+      <div class="btns"><a class="btn primary" href="demo.html#indiechip">▶ Play it</a><a class="btn" href="games/hiss-off-home.html" target="_blank" rel="noopener">Full screen ↗</a></div>
+    </div>
+    <div class="frame" data-video>
+      <video muted loop playsinline autoplay preload="metadata" src="Videos/hiss-off-home.mp4"></video>
+      <a class="ph poster" href="demo.html#indiechip" style="padding:0" aria-label="Play Hiss Off Home"><img src="games/hiss-off-home.jpg" alt="Hiss Off Home title screen: the gold snake fleeing the blue snake towards its burrow" style="width:100%;height:100%;object-fit:cover;display:block"><span class="play-badge" aria-hidden="true">▶</span></a>
+    </div>
+  </article>
+
+  <article class="project" id="bunny-slides">
+    <div>
+      <div class="meta">Indiechip Games</div>
+      <h2>Bunny Slides</h2>
+      <p>One of the titles I work on at Indiechip Games.</p>
+      <!-- TOBY: add 1-2 sentences on the game and what you built (systems, tools, features), plus store/trailer link -->
+      <div class="chips"><span class="chip">Indiechip Games</span><span class="chip">Playable in browser</span></div>
+      <div class="btns"><a class="btn primary" href="demo.html#indiechip">▶ Play it</a><a class="btn" href="games/bunny-slides/index.html" target="_blank" rel="noopener">Full screen ↗</a></div>
+    </div>
+    <div class="frame" data-video>
+      <video muted loop playsinline autoplay preload="metadata" src="Videos/bunny-slides.mp4"></video>
+      <a class="ph poster" href="demo.html#indiechip" style="padding:0" aria-label="Play Bunny Slides"><img src="games/bunny-slides.jpg" alt="Bunny Slides gameplay: a bunny crossing bridges between slides, with foxes and a burrow below" style="width:100%;height:100%;object-fit:cover;display:block"><span class="play-badge" aria-hidden="true">▶</span></a>
+    </div>
+  </article>
+
+  <article class="project" id="combat">
+    <div>
+      <div class="meta">Final year project · Unity · Solo</div>
+      <h2>Physics-Based Combat Demo</h2>
+      <p>Physics is underused in hand-to-hand combat — most games fake the impact. This demo tests the alternative: a sword encounter where swing force is calculated from classical-mechanics formulas, so how you move the weapon is what determines how hard it hits.</p>
+      <p>I researched physics implementations across Super Mario Bros., Pong, Portal and Star Wars: The Force Unleashed, then built the movement and swing-force system over four weeks. A five-person playtest group confirmed the core concept worked.</p>
+      <div class="mini">
+        <div><b>4 wks</b><small>Build time</small></div>
+        <div><b>5</b><small>Playtesters</small></div>
+        <div><b>2</b><small>Enemy AI</small></div>
+      </div>
+      <div class="chips"><span class="chip">Unity</span><span class="chip">C#</span><span class="chip">Rigidbody physics</span><span class="chip">Combat systems</span></div>
+      <div class="btns"><a class="btn primary" href="demo.html">▶ Play in browser</a></div>
+    </div>
+    <div class="frame" data-video>
+      <video muted loop playsinline autoplay preload="metadata" src="Videos/Physics-Based%20Combat%20Demo.mp4"></video>
+      <div class="ph">Video: Videos/Physics-Based Combat Demo.mp4</div>
+    </div>
+  </article>
+
+  <article class="project" id="borrowed">
+    <div>
+      <div class="meta">Indie project · Programming lead · Active</div>
+      <h2>On Borrowed Time</h2>
+      <p>Started as a GMTK Game Jam 2026 entry. The team missed the deadline, but the concept was strong enough to keep building, and it's now in active development.</p>
+      <p>I lead gameplay systems and UI implementation, with input into asset integration and design decisions.</p>
+      <div class="mini">
+        <div><b>Active</b><small>Status</small></div>
+        <div><b>Lead</b><small>Programming</small></div>
+        <div><b>Jam→Ship</b><small>Trajectory</small></div>
+      </div>
+      <div class="chips"><span class="chip">Gameplay systems</span><span class="chip">UI/UX</span><span class="chip">Team collaboration</span></div>
+    </div>
+    <div class="frame" data-video>
+      <video muted loop playsinline autoplay preload="metadata" src="Videos/on-borrowed-time.mp4"></video>
+      <div class="ph">Capture coming soon</div>
+    </div>
+  </article>
+
+  <article class="project" id="forensics">
+    <div>
+      <div class="meta">University of Portsmouth · Collaborative</div>
+      <h2>Forensics Training Tool</h2>
+      <p>A cross-discipline training simulation built with a wider student team. I built the core player-movement system and the object pick-up/storage mechanics, and supported debugging and data management for interactable evidence items.</p>
+      <div class="mini">
+        <div><b>Team</b><small>Structure</small></div>
+        <div><b>Sim</b><small>Category</small></div>
+        <div><b>Ptsm</b><small>Origin</small></div>
+      </div>
+      <div class="chips"><span class="chip">Movement systems</span><span class="chip">Inventory / pick-up</span><span class="chip">Debugging</span></div>
+    </div>
+    <div class="frame" data-video>
+      <video muted loop playsinline autoplay preload="metadata" src="Videos/groupProject.mp4"></video>
+      <div class="ph">Video: Videos/groupProject.mp4</div>
+    </div>
+  </article>
+
+</div>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="eyebrow">Get in touch</div>
+    <h2>Let's talk about a role.</h2>
+    <div class="btns">
+      <a class="btn primary" href="mailto:tobysait@outlook.com">tobysait@outlook.com</a>
+      <a class="btn" href="https://www.linkedin.com/in/tobysait" target="_blank" rel="noopener">LinkedIn ↗</a>
+      <a class="btn" href="https://github.com/Tubz-24" target="_blank" rel="noopener">GitHub ↗</a>
+      <a class="btn" href="cv/Toby_Sait_CV.pdf">Download CV</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer><div class="wrap">
+  <span>© 2026 Toby Sait</span>
+  <span><a href="index.html">Home</a> · <a href="demo.html">Play demo</a></span>
+</div></footer>
+
+<script>
+// Hide the placeholder panel when a real video loads; show it if the file is missing.
+document.querySelectorAll('[data-video]').forEach(function(f){
+  var v=f.querySelector('video');
+  function ok(){f.classList.add('has-video')}
+  function bad(){f.classList.remove('has-video')}
+  v.addEventListener('loadeddata',ok);
+  v.addEventListener('error',bad);
+  if(v.readyState>=2) ok();
+});
+</script>
+</body>
+</html>
