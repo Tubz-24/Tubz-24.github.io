@@ -96,8 +96,8 @@
 
      <article class="project" id="Unreal engine stealth demo ">
     <div>
-      <div class="meta">University of Portsmouth · assignment project · Unity · Solo</div>
-      <h2>Physics-Based Combat Demo</h2>
+      <div class="meta">University of Portsmouth · assignment project · Unreal engine · Solo</div>
+      <h2>Unreal engine stealth demo </h2>
       <p>I began developing this project at university, where I was tasked with building a working game system within a project. I decided to develop a navigation system that NPCs use to travel around a selected area. I built it by placing a set number of nodes in a grid across the floor, then connecting neighbouring nodes to form a navigation graph, skipping any connections that are blocked by walls. The enemy then uses breadth-first search (BFS), a pathfinding algorithm, to find the shortest route through this graph whenever it needs to move.</p>
 
 <p>The enemy uses a behaviour tree, a hierarchy of nodes that decides what the enemy should do depending on what is happening around it. I also use a blackboard to store the main variables, such as whether the enemy can see the player and its current alert state. The enemy stays in its roaming state until it sees the player. It then chases the player by finding the node nearest to the player’s last known location, using that as the end point of its path, and updating the path every half second so it can follow the player as they move.</p>
