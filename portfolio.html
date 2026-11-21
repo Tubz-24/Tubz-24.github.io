@@ -94,30 +94,6 @@
     </div>
   </article>
 
-     <article class="project" id="Unreal engine stealth demo ">
-    <div>
-      <div class="meta">University of Portsmouth · assignment project · Unreal engine · Solo</div>
-      <h2>Unreal engine stealth demo </h2>
-      <p>I began developing this project at university, where I was tasked with building a working game system within a project. I decided to develop a navigation system that NPCs use to travel around a selected area. I built it by placing a set number of nodes in a grid across the floor, then connecting neighbouring nodes to form a navigation graph, skipping any connections that are blocked by walls. The enemy then uses breadth-first search (BFS), a pathfinding algorithm, to find the shortest route through this graph whenever it needs to move.</p>
-
-<p>The enemy uses a behaviour tree, a hierarchy of nodes that decides what the enemy should do depending on what is happening around it. I also use a blackboard to store the main variables, such as whether the enemy can see the player and its current alert state. The enemy stays in its roaming state until it sees the player. It then chases the player by finding the node nearest to the player’s last known location, using that as the end point of its path, and updating the path every half second so it can follow the player as they move.</p>
-
-<p>My next steps are to implement the smaller features needed to make this a fully playable demo, such as a goal and an attack from the enemy. These features are not in the project yet because the main aim of this tech demo was to showcase my skills in Unreal Engine and my ability to develop systems for video games. When I have spare time, I plan to come back and finish development to turn this into a full demo.  .</p>
-      <div class="mini">
-        <div>4 wks<small>Build time</small></div>
-        <div>5<small>Playtesters</small></div>
-        <div>2<small>Enemy AI</small></div>
-      </div>
-      <div class="chips"><span class="chip">Unity</span><span class="chip">C#</span><span class="chip">Rigidbody physics</span><span class="chip">Combat systems</span></div>
-      <div class="btns"><a class="btn primary" href="demo.html">▶ Play in browser</a></div>
-    </div>
-    <div class="frame" data-video>
-      <video muted loop playsinline autoplay preload="metadata" src="Videos/Physics-Based%20Combat%20Demo.mp4"></video>
-      <div class="ph">Video: Videos/Unreal_Engine_TestDemo.mp4</div>
-    </div>
-  </article>
-
-  
   <div class="studio" id="uop">
     <div class="eyebrow">University of Portsmouth · 2023 – 2026</div>
     <h2>University work</h2>
@@ -141,6 +117,26 @@
     <div class="frame" data-video>
       <video muted loop playsinline autoplay preload="metadata" src="Videos/Physics-Based%20Combat%20Demo.mp4"></video>
       <div class="ph">Video: Videos/Physics-Based Combat Demo.mp4</div>
+    </div>
+  </article>
+
+  <article class="project" id="stealth">
+    <div>
+      <div class="meta">University of Portsmouth · Assignment project · Unreal Engine · Solo</div>
+      <h2>Unreal Engine Stealth Demo</h2>
+      <p>I began developing this project at university, where I was tasked with building a working game system within a project. I decided to develop a navigation system that NPCs use to travel around a selected area. I built it by placing a set number of nodes in a grid across the floor, then connecting neighbouring nodes to form a navigation graph, skipping any connections that are blocked by walls. The enemy then uses breadth-first search (BFS), a pathfinding algorithm, to find the shortest route through this graph whenever it needs to move.</p>
+      <p>The enemy uses a behaviour tree, a hierarchy of nodes that decides what the enemy should do depending on what is happening around it. I also use a blackboard to store the main variables, such as whether the enemy can see the player and its current alert state. The enemy stays in its roaming state until it sees the player. It then chases the player by finding the node nearest to the player’s last known location, using that as the end point of its path, and updating the path every half second so it can follow the player as they move.</p>
+      <p>My next steps are to implement the smaller features needed to make this a fully playable demo, such as a goal and an attack from the enemy. These features are not in the project yet because the main aim of this tech demo was to showcase my skills in Unreal Engine and my ability to develop systems for video games. When I have spare time, I plan to come back and finish development to turn this into a full demo.</p>
+      <div class="mini">
+        <div><b>Solo</b><small>Team</small></div>
+        <div><b>BFS</b><small>Pathfinding</small></div>
+        <div><b>0.5 s</b><small>Path refresh</small></div>
+      </div>
+      <div class="chips"><span class="chip">Unreal Engine</span><span class="chip">Enemy AI</span><span class="chip">Behaviour trees</span><span class="chip">Pathfinding</span></div>
+    </div>
+    <div class="frame" data-video>
+      <video muted loop playsinline autoplay preload="metadata" src="Videos/Unreal_Engine_TestDemo.mp4"></video>
+      <div class="ph">Video: Videos/Unreal_Engine_TestDemo.mp4</div>
     </div>
   </article>
 
